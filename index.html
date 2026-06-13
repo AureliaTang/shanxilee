@@ -168,10 +168,10 @@
                 padding-bottom: 0;
             }
             .hero-copy {
-                padding: 9vw 7vw 6vw var(--content-inset-left);
+                padding: 4.95vw 7vw 6vw var(--content-inset-left);
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-start;
                 position: relative;
                 overflow: hidden;
             }
@@ -184,6 +184,26 @@
                 top: 4vw;
                 left: 2vw;
                 line-height: 1;
+            }
+            .hero-origin {
+                font-family:
+                    "Songti SC",
+                    "STSong",
+                    "SimSun",
+                    Georgia,
+                    serif;
+                font-size: clamp(20px, 2.4vw, 28px);
+                font-weight: 400;
+                letter-spacing: 0.14em;
+                margin-bottom: 12px;
+                position: relative;
+            }
+            .hero-origin .hero-from {
+                color: rgba(255, 255, 255, 0.82);
+                font-size: 0.85em;
+            }
+            .hero-origin .hero-place {
+                color: rgba(255, 255, 255, 0.82);
             }
             .eyebrow {
                 color: var(--gold);
@@ -208,6 +228,11 @@
                 font-size: clamp(18px, 2vw, 24px);
                 margin-bottom: 34px;
                 position: relative;
+            }
+            .hero-copy p.hero-origin {
+                max-width: none;
+                font-size: clamp(20px, 2.4vw, 28px);
+                margin-bottom: 12px;
             }
             .hero-actions {
                 display: flex;
@@ -346,9 +371,10 @@
                 border: 0;
                 box-shadow: none;
             }
-            .story-copy h2 {
+            .story-copy h2,
+            #signature .section-head h2 {
                 font-family: Georgia, serif;
-                font-size: clamp(26px, 3vw, 38px);
+                font-size: clamp(22px, 2.55vw, 32px);
                 line-height: 1.08;
                 letter-spacing: -0.025em;
                 margin-bottom: 10px;
@@ -418,19 +444,28 @@
                 color: rgba(255, 255, 255, 0.66);
             }
             .menu-text-grid {
-                columns: 3 280px;
-                column-gap: 14px;
+                display: grid;
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1.14fr) minmax(
+                        0,
+                        0.86fr
+                    );
+                gap: 14px;
                 margin-bottom: 34px;
             }
+            .menu-column {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                min-width: 0;
+            }
             .menu-category {
-                display: inline-block;
+                display: block;
                 width: 100%;
-                break-inside: avoid;
                 background: rgba(255, 250, 241, 0.045);
                 border: 1px solid rgba(255, 255, 255, 0.1);
                 border-radius: 14px;
                 padding: 10px 12px;
-                margin: 0 0 10px;
+                margin: 0;
             }
             .menu-category h3 {
                 font-family: Georgia, serif;
@@ -603,7 +638,7 @@
                     order: -1;
                 }
                 .hero-copy {
-                    padding: 54px 24px 60px var(--content-inset-left);
+                    padding: 39.6px 24px 60px var(--content-inset-left);
                 }
                 .signature-grid,
                 .signature-more {
@@ -614,6 +649,12 @@
                 }
                 .menu-placeholder {
                     aspect-ratio: 2.6/1;
+                }
+                .menu-text-grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+                .menu-text-grid .menu-column:last-child {
+                    grid-column: 1 / -1;
                 }
             }
             @media (max-width: 720px) {
@@ -648,6 +689,12 @@
                 }
                 .menu-placeholder {
                     aspect-ratio: 2.2/1;
+                }
+                .menu-text-grid {
+                    grid-template-columns: 1fr;
+                }
+                .menu-text-grid .menu-column:last-child {
+                    grid-column: auto;
                 }
                 .floating-card {
                     left: 18px;
@@ -1337,6 +1384,7 @@
         <main>
             <section class="hero">
                 <div class="hero-copy">
+                    <p class="hero-origin"><span class="hero-from">来自</span> <span class="hero-place">中国·山西</span></p>
                     <div class="eyebrow">
                         Shanxi · Chinese · Hot Pot
                     </div>
@@ -1494,6 +1542,7 @@
                     </div>
 
                     <div class="menu-text-grid">
+                        <div class="menu-column">
                         <article class="menu-category">
                             <h3>House Specials</h3>
 
@@ -1628,6 +1677,19 @@
                             </div>
                         </article>
                         <article class="menu-category">
+                            <h3>Seafood</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>辣炒花蛤</strong
+                                    ><span>Spicy fried clam</span>
+                                </div>
+                                <em>$22.80</em>
+                            </div>
+                        </article>
+                        </div>
+                        <div class="menu-column">
+                        <article class="menu-category">
                             <h3>Pork</h3>
 
                             <div class="menu-item">
@@ -1738,6 +1800,47 @@
                             </div>
                         </article>
                         <article class="menu-category">
+                            <h3>BBQ Skewers</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>羊肉串</strong
+                                    ><span>Lamb skewer</span>
+                                </div>
+                                <em>$2.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>牛肉串</strong
+                                    ><span>Beef skewer</span>
+                                </div>
+                                <em>$3.00</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>鸡肉串</strong
+                                    ><span>Chicken skewer</span>
+                                </div>
+                                <em>$2.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>烤鱼豆腐</strong
+                                    ><span>Fish tofu skewer</span>
+                                </div>
+                                <em>$2.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>烤面筋</strong
+                                    ><span>Gluten skewer</span>
+                                </div>
+                                <em>$2.50</em>
+                            </div>
+                        </article>
+                        </div>
+                        <div class="menu-column">
+                        <article class="menu-category">
                             <h3>Vegetables</h3>
 
                             <div class="menu-item">
@@ -1820,17 +1923,6 @@
                             </div>
                         </article>
                         <article class="menu-category">
-                            <h3>Seafood</h3>
-
-                            <div class="menu-item">
-                                <div>
-                                    <strong>辣炒花蛤</strong
-                                    ><span>Spicy fried clam</span>
-                                </div>
-                                <em>$22.80</em>
-                            </div>
-                        </article>
-                        <article class="menu-category">
                             <h3>Rice</h3>
 
                             <div class="menu-item">
@@ -1893,45 +1985,7 @@
                                 <em>$5.80</em>
                             </div>
                         </article>
-                        <article class="menu-category">
-                            <h3>BBQ Skewers</h3>
-
-                            <div class="menu-item">
-                                <div>
-                                    <strong>羊肉串</strong
-                                    ><span>Lamb skewer</span>
-                                </div>
-                                <em>$2.80</em>
-                            </div>
-                            <div class="menu-item">
-                                <div>
-                                    <strong>牛肉串</strong
-                                    ><span>Beef skewer</span>
-                                </div>
-                                <em>$3.00</em>
-                            </div>
-                            <div class="menu-item">
-                                <div>
-                                    <strong>鸡肉串</strong
-                                    ><span>Chicken skewer</span>
-                                </div>
-                                <em>$2.80</em>
-                            </div>
-                            <div class="menu-item">
-                                <div>
-                                    <strong>烤鱼豆腐</strong
-                                    ><span>Fish tofu skewer</span>
-                                </div>
-                                <em>$2.80</em>
-                            </div>
-                            <div class="menu-item">
-                                <div>
-                                    <strong>烤面筋</strong
-                                    ><span>Gluten skewer</span>
-                                </div>
-                                <em>$2.50</em>
-                            </div>
-                        </article>
+                        </div>
                     </div>
                 </div>
             </section>

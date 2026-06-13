@@ -1,0 +1,1973 @@
+<!doctype html>
+<html lang="en-AU">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Shanxi Lee's Kitchen | 山西李家厨房 Box Hill</title>
+        <meta
+            name="description"
+            content="Shanxi Lee's Kitchen 山西李家厨房 in Box Hill. Authentic Shanxi and Northern Chinese restaurant serving 羊蝎子火锅 lamb spine hot pot, 羊肉串 lamb skewers, 羊肉水饺 lamb dumplings and 山西面食."
+        />
+        <link rel="canonical" href="https://shanxileeskitchen.com.au/" />
+        <meta property="og:type" content="restaurant.restaurant" />
+        <meta
+            property="og:title"
+            content="Shanxi Lee's Kitchen | 山西李家厨房 Box Hill"
+        />
+        <meta
+            property="og:description"
+            content="Authentic Shanxi and Northern Chinese cuisine in Box Hill. Lamb spine hot pot, skewers, dumplings and noodles."
+        />
+        <meta
+            property="og:image"
+            content="https://shanxileeskitchen.com.au/assets/lamb-spine-hotpot-shanxi-lees-kitchen-box-hill.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/favicon_io/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/favicon_io/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/favicon_io/favicon-16x16.png"
+        />
+        <link rel="manifest" href="assets/favicon_io/site.webmanifest" />
+        <link rel="shortcut icon" href="assets/favicon_io/favicon.ico" />
+        <meta name="theme-color" content="#c89a4b" />
+
+        <style>
+            :root {
+                --ink: #17120d;
+                --charcoal: #211713;
+                --cream: #f7efe2;
+                --paper: #fffaf1;
+                --gold: #c89a4b;
+                --red: #a5271f;
+                --muted: #7b6b5f;
+                --line: rgba(33, 23, 19, 0.14);
+                --shadow: 0 24px 70px rgba(31, 20, 12, 0.16);
+                --radius: 28px;
+                --nav-height: 88px;
+                --content-inset-left: 7vw;
+            }
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                font-family:
+                    Inter,
+                    ui-sans-serif,
+                    system-ui,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Arial,
+                    sans-serif;
+                color: var(--ink);
+                background: var(--cream);
+                line-height: 1.55;
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            img {
+                display: block;
+                width: 100%;
+            }
+
+            .topbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 100;
+                background: #f6dd9c;
+                backdrop-filter: blur(18px);
+                border-bottom: 1px solid var(--line);
+            }
+            .nav {
+                width: 100%;
+                margin: 0;
+                padding: 0 max(22px, calc((100vw - 1180px) / 2 + 22px)) 0
+                    var(--content-inset-left);
+                min-height: var(--nav-height);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 18px;
+            }
+            .brand {
+                display: block;
+                line-height: 0;
+            }
+            .brand img {
+                display: block;
+                height: var(--nav-height);
+                width: auto;
+                max-width: min(330px, 75vw);
+            }
+            .navlinks {
+                display: flex;
+                gap: 24px;
+                align-items: center;
+                color: #4b3c31;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            .nav-cta {
+                color: #cd333a;
+                font-size: 24px;
+                font-weight: 800;
+                letter-spacing: 0.02em;
+                font-variant-numeric: tabular-nums;
+                white-space: nowrap;
+            }
+            .nav-cta:hover {
+                color: var(--ink);
+            }
+
+            .hero {
+                min-height: 100vh;
+                display: grid;
+                grid-template-columns: 1.05fr 0.95fr;
+                align-items: stretch;
+                background: var(--charcoal);
+                color: white;
+                padding-top: var(--nav-height);
+                padding-bottom: 0;
+            }
+            .hero-copy {
+                padding: 9vw 7vw 6vw var(--content-inset-left);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                overflow: hidden;
+            }
+            .hero-copy:before {
+                content: "李";
+                position: absolute;
+                font-family: Georgia, serif;
+                font-size: 36vw;
+                opacity: 0.045;
+                top: 4vw;
+                left: 2vw;
+                line-height: 1;
+            }
+            .eyebrow {
+                color: var(--gold);
+                text-transform: uppercase;
+                letter-spacing: 0.22em;
+                font-size: 12px;
+                font-weight: 900;
+                margin-bottom: 22px;
+                position: relative;
+            }
+            h1 {
+                font-family: Georgia, "Times New Roman", serif;
+                font-size: clamp(48px, 7.5vw, 104px);
+                line-height: 0.94;
+                letter-spacing: -0.06em;
+                margin-bottom: 24px;
+                position: relative;
+            }
+            .hero-copy p {
+                max-width: 620px;
+                color: rgba(255, 255, 255, 0.78);
+                font-size: clamp(18px, 2vw, 24px);
+                margin-bottom: 34px;
+                position: relative;
+            }
+            .hero-actions {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 13px;
+                position: relative;
+            }
+            .btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 52px;
+                padding: 0 24px;
+                border-radius: 999px;
+                font-weight: 900;
+                transition: 0.2s ease;
+            }
+            .btn:hover {
+                transform: translateY(-2px);
+            }
+            .btn-gold {
+                background: var(--gold);
+                color: #211713;
+            }
+            .btn-light {
+                background: rgba(255, 255, 255, 0.1);
+                color: #fff;
+                border: 1px solid rgba(255, 255, 255, 0.22);
+            }
+            .hero-media {
+                min-height: 520px;
+                position: relative;
+                background: url("assets/lamb-spine-hotpot-shanxi-lees-kitchen-box-hill.jpg")
+                    center/cover no-repeat;
+                background-position: right;
+            }
+            .hero-media:after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(
+                    90deg,
+                    rgba(33, 23, 19, 0.75),
+                    rgba(33, 23, 19, 0.06) 45%,
+                    rgba(33, 23, 19, 0.1)
+                );
+            }
+            .floating-card {
+                position: absolute;
+                left: 34px;
+                top: 75%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 6px;
+                background: #f6dd9c;
+                color: #211713;
+                border-radius: 999px;
+                padding: 18px 36px;
+                z-index: 2;
+                box-shadow: 0 10px 28px rgba(23, 18, 13, 0.14);
+                text-decoration: none;
+                font-size: 22px;
+                font-weight: 700;
+                letter-spacing: 0.04em;
+                transform: translateY(-50%);
+                transition:
+                    background 0.2s ease,
+                    box-shadow 0.2s ease,
+                    transform 0.2s ease;
+            }
+            .floating-card-chevron {
+                width: 0.75em;
+                height: 0.75em;
+                flex-shrink: 0;
+                stroke: currentColor;
+                stroke-width: 1.75;
+                fill: none;
+            }
+            .floating-card:hover {
+                background: #f2d078;
+                box-shadow: 0 14px 32px rgba(23, 18, 13, 0.18);
+                transform: translateY(calc(-50% - 2px));
+            }
+
+            section {
+                padding: 92px 22px;
+            }
+            .container {
+                max-width: 1180px;
+                margin: auto;
+            }
+            .section-head {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                gap: 30px;
+                margin-bottom: 38px;
+            }
+            .section-head h2 {
+                font-family: Georgia, "Times New Roman", serif;
+                font-size: clamp(26px, 3vw, 38px);
+                line-height: 1.08;
+                letter-spacing: -0.025em;
+                max-width: 720px;
+            }
+            .section-head p {
+                color: var(--muted);
+                max-width: 420px;
+            }
+
+            .story {
+                background: var(--paper);
+            }
+            .story-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+            .story-banner {
+                border-radius: var(--radius);
+                overflow: hidden;
+                box-shadow: var(--shadow);
+                background: #eee;
+                aspect-ratio: 3/1;
+            }
+            .story-banner img {
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                background: #f6f0e7;
+            }
+            .story-copy {
+                padding: 22px 4px 0;
+                background: transparent;
+                border: 0;
+                box-shadow: none;
+            }
+            .story-copy h2 {
+                font-family: Georgia, serif;
+                font-size: clamp(26px, 3vw, 38px);
+                line-height: 1.08;
+                letter-spacing: -0.025em;
+                margin-bottom: 10px;
+            }
+            .story-copy p {
+                color: #4b3c31;
+                max-width: 920px;
+                font-size: 16px;
+            }
+            .story-copy .cn {
+                color: var(--muted);
+                margin-top: 8px;
+            }
+            .feature-list {
+                display: none;
+            }
+
+            .signature-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 18px;
+            }
+            .dish-card {
+                background: #fff;
+                border-radius: 28px;
+                overflow: hidden;
+                border: 1px solid var(--line);
+                box-shadow: 0 18px 44px rgba(31, 20, 12, 0.08);
+            }
+            .dish-card img {
+                height: 260px;
+                object-fit: cover;
+            }
+            .dish-card .dish-text {
+                padding: 20px;
+            }
+            .dish-card h3 {
+                font-family: Georgia, serif;
+                font-size: 22px;
+                line-height: 1.05;
+                margin-bottom: 9px;
+            }
+            .dish-card p {
+                color: var(--muted);
+                font-size: 16px;
+            }
+
+            .signature-more {
+                margin-top: 18px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 18px;
+            }
+            .signature-more .dish-card img {
+                height: 230px;
+            }
+
+            .menu-section {
+                background: var(--charcoal);
+                color: #fff;
+                padding-top: 72px;
+            }
+            .menu-section .section-head {
+                margin-bottom: 18px;
+            }
+            .menu-section .section-head p {
+                color: rgba(255, 255, 255, 0.66);
+            }
+            .menu-text-grid {
+                columns: 3 280px;
+                column-gap: 14px;
+                margin-bottom: 34px;
+            }
+            .menu-category {
+                display: inline-block;
+                width: 100%;
+                break-inside: avoid;
+                background: rgba(255, 250, 241, 0.045);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 14px;
+                padding: 10px 12px;
+                margin: 0 0 10px;
+            }
+            .menu-category h3 {
+                font-family: Georgia, serif;
+                color: var(--gold);
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+            .menu-item {
+                display: grid;
+                grid-template-columns: 1fr auto;
+                gap: 8px;
+                padding: 4px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            }
+            .menu-item:last-child {
+                border-bottom: 0;
+            }
+            .menu-item strong {
+                display: inline;
+                color: #fff;
+                font-size: 14px;
+                margin-right: 6px;
+            }
+            .menu-item span {
+                display: inline;
+                color: rgba(255, 255, 255, 0.62);
+                font-size: 12px;
+            }
+            .menu-item em {
+                color: var(--gold);
+                font-style: normal;
+                font-weight: 800;
+                white-space: nowrap;
+                font-size: 13px;
+            }
+
+            .menu-image-stack {
+                display: grid;
+                gap: 16px;
+            }
+            .menu-placeholder {
+                position: relative;
+                width: 100%;
+                aspect-ratio: 3/1;
+                border-radius: 18px;
+                overflow: hidden;
+                background: rgba(255, 255, 255, 0.08);
+                border: 1px solid rgba(255, 255, 255, 0.16);
+                box-shadow: 0 18px 46px rgba(0, 0, 0, 0.22);
+            }
+            .menu-placeholder img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .menu-placeholder figcaption {
+                position: absolute;
+                left: 12px;
+                bottom: 12px;
+                background: rgba(33, 23, 19, 0.72);
+                backdrop-filter: blur(10px);
+                border-radius: 999px;
+                padding: 6px 10px;
+                font-size: 12px;
+                color: #fff;
+            }
+
+            .visit {
+                background: var(--paper);
+            }
+            .visit-grid {
+                display: grid;
+                grid-template-columns: 0.82fr 1.18fr;
+                gap: 24px;
+                align-items: stretch;
+            }
+            .visit-card {
+                background: #fff;
+                border: 1px solid var(--line);
+                border-radius: var(--radius);
+                padding: 30px;
+                box-shadow: 0 16px 42px rgba(31, 20, 12, 0.08);
+            }
+            .visit-card h3 {
+                font-family: Georgia, serif;
+                font-size: 34px;
+                margin-bottom: 18px;
+            }
+            .info-row {
+                padding: 16px 0;
+                border-bottom: 1px solid var(--line);
+            }
+            .info-row:last-child {
+                border-bottom: 0;
+            }
+            .info-row strong {
+                display: block;
+                margin-bottom: 4px;
+            }
+            .info-row span {
+                color: var(--muted);
+            }
+            .map {
+                overflow: hidden;
+                border-radius: var(--radius);
+                box-shadow: var(--shadow);
+                min-height: 420px;
+                background: #ddd;
+            }
+            iframe {
+                width: 100%;
+                height: 100%;
+                min-height: 420px;
+                border: 0;
+            }
+
+            .sticky-mobile {
+                display: none;
+                position: fixed;
+                left: 12px;
+                right: 12px;
+                bottom: 12px;
+                z-index: 120;
+                background: rgba(33, 23, 19, 0.94);
+                backdrop-filter: blur(16px);
+                border: 1px solid rgba(255, 255, 255, 0.16);
+                border-radius: 999px;
+                padding: 8px;
+                box-shadow: 0 18px 60px rgba(0, 0, 0, 0.3);
+                gap: 8px;
+            }
+            .sticky-mobile a {
+                flex: 1;
+                text-align: center;
+                padding: 13px 10px;
+                border-radius: 999px;
+                font-size: 14px;
+                font-weight: 900;
+                color: #fff;
+            }
+            .sticky-mobile a:first-child {
+                background: var(--gold);
+                color: var(--ink);
+            }
+            footer {
+                background: #120d0a;
+                color: #fff;
+                padding: 44px 22px 86px;
+                text-align: center;
+            }
+            footer p {
+                color: rgba(255, 255, 255, 0.62);
+                margin-top: 8px;
+            }
+
+            @media (max-width: 980px) {
+                :root {
+                    --content-inset-left: 24px;
+                }
+                .hero {
+                    grid-template-columns: 1fr;
+                }
+                .hero-media {
+                    min-height: 56vh;
+                    order: -1;
+                }
+                .hero-copy {
+                    padding: 54px 24px 60px var(--content-inset-left);
+                }
+                .signature-grid,
+                .signature-more {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .visit-grid {
+                    grid-template-columns: 1fr;
+                }
+                .menu-placeholder {
+                    aspect-ratio: 2.6/1;
+                }
+            }
+            @media (max-width: 720px) {
+                .navlinks {
+                    display: none;
+                }
+                .hero {
+                    padding-top: var(--nav-height);
+                }
+                h1 {
+                    font-size: 52px;
+                }
+                .section-head {
+                    display: block;
+                }
+                .section-head p {
+                    margin-top: 14px;
+                }
+                section {
+                    padding: 72px 18px;
+                }
+                .signature-grid,
+                .signature-more {
+                    grid-template-columns: 1fr;
+                }
+                .dish-card img,
+                .signature-more .dish-card img {
+                    height: 310px;
+                }
+                .story-banner {
+                    aspect-ratio: 2.15/1;
+                }
+                .menu-placeholder {
+                    aspect-ratio: 2.2/1;
+                }
+                .floating-card {
+                    left: 18px;
+                }
+                .sticky-mobile {
+                    display: flex;
+                }
+            }
+        </style>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://shanxileeskitchen.com.au/#website",
+                        "url": "https://shanxileeskitchen.com.au/",
+                        "name": "Shanxi Lee's Kitchen",
+                        "inLanguage": "en-AU"
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://shanxileeskitchen.com.au/#webpage",
+                        "url": "https://shanxileeskitchen.com.au/",
+                        "name": "Shanxi Lee's Kitchen | 山西李家厨房 Box Hill",
+                        "isPartOf": {
+                            "@id": "https://shanxileeskitchen.com.au/#website"
+                        },
+                        "about": {
+                            "@id": "https://shanxileeskitchen.com.au/#restaurant"
+                        },
+                        "primaryImageOfPage": {
+                            "@type": "ImageObject",
+                            "url": "https://shanxileeskitchen.com.au/assets/lamb-spine-hotpot-shanxi-lees-kitchen-box-hill.jpg"
+                        },
+                        "inLanguage": "en-AU"
+                    },
+                    {
+                        "@type": "Restaurant",
+                        "@id": "https://shanxileeskitchen.com.au/#restaurant",
+                        "name": "Shanxi Lee's Kitchen",
+                        "alternateName": "山西李家厨房",
+                        "url": "https://shanxileeskitchen.com.au/",
+                        "image": [
+                            "https://shanxileeskitchen.com.au/assets/lamb-spine-hotpot-shanxi-lees-kitchen-box-hill.jpg",
+                            "https://shanxileeskitchen.com.au/assets/lamb-spine-hotpot-overhead-shanxi-lees-kitchen.jpg",
+                            "https://shanxileeskitchen.com.au/assets/saute-spicy-chicken-potato-shanxi-lees-kitchen.jpg",
+                            "https://shanxileeskitchen.com.au/assets/dry-fried-french-beans-shanxi-lees-kitchen.jpg",
+                            "https://shanxileeskitchen.com.au/assets/chive-pancake-shanxi-lees-kitchen.jpg"
+                        ],
+                        "telephone": "+61 3 9077 2166",
+                        "priceRange": "$20-$40",
+                        "servesCuisine": [
+                            "Shanxi",
+                            "Northern Chinese",
+                            "Chinese",
+                            "Hot Pot",
+                            "Dumplings",
+                            "Noodles"
+                        ],
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "568 Station St",
+                            "addressLocality": "Box Hill",
+                            "addressRegion": "VIC",
+                            "postalCode": "3128",
+                            "addressCountry": "AU"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": "-37.819",
+                            "longitude": "145.122"
+                        },
+                        "hasMap": "https://www.google.com/maps/search/?api=1&query=568+Station+St+Box+Hill+VIC+3128",
+                        "areaServed": ["Box Hill", "Melbourne", "Victoria"],
+                        "currenciesAccepted": "AUD",
+                        "paymentAccepted": [
+                            "Cash",
+                            "Credit Card",
+                            "Debit Card"
+                        ],
+                        "hasMenu": {
+                            "@type": "Menu",
+                            "name": "Shanxi Lee's Kitchen Menu",
+                            "hasMenuSection": [
+                                {
+                                    "@type": "MenuSection",
+                                    "name": "House Specials",
+                                    "hasMenuItem": [
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "地炉烤包 House lamb hotpot set",
+                                            "description": "House lamb hotpot set",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "58.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "羊蝎子火锅 Lamb spine hot pot",
+                                            "description": "Lamb spine hot pot",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "58.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "金汤鲜鱼 Golden soup fish",
+                                            "description": "Golden soup fish",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "35.00"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "羊汤 Lamb soup",
+                                            "description": "Lamb soup",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "7.80"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "MenuSection",
+                                    "name": "Cold Dishes",
+                                    "hasMenuItem": [
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "特色酱牛肉 Sliced beef shank",
+                                            "description": "Sliced beef shank",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "16.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "夫妻肺片 Sliced beef and ox tripe in chilli sauce",
+                                            "description": "Sliced beef and ox tripe in chilli sauce",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "16.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "凉拌肚丝 Cold shredded tripe",
+                                            "description": "Cold shredded tripe",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "11.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "拍黄瓜 Cucumber salad",
+                                            "description": "Cucumber salad",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "11.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "凉拌木耳 Black fungus salad",
+                                            "description": "Black fungus salad",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "11.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "凉拌土豆丝 Shredded potato salad",
+                                            "description": "Shredded potato salad",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "11.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "泡椒凤爪 Pickled chilli chicken feet",
+                                            "description": "Pickled chilli chicken feet",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "14.80"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "MenuSection",
+                                    "name": "Dumplings & Noodles",
+                                    "hasMenuItem": [
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "羊肉水饺 Lamb dumplings",
+                                            "description": "Lamb dumplings",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "13.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "牛肉水饺 Beef dumplings",
+                                            "description": "Beef dumplings",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "13.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "猪肉水饺 Pork dumplings",
+                                            "description": "Pork dumplings",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "13.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "韭菜盒子 Chive pancake",
+                                            "description": "Chive pancake"
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "山西炒面 Shanxi fried noodles",
+                                            "description": "Shanxi fried noodles",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "14.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "肉夹馍 Chinese hamburger",
+                                            "description": "Chinese hamburger",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "7.50"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "MenuSection",
+                                    "name": "Pork",
+                                    "hasMenuItem": [
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "大饼夹肉 Sliced pork head meat with pan-fried bread",
+                                            "description": "Sliced pork head meat with pan-fried bread",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "16.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "山西炒凉粉 Shanxi stir-fried jelly noodles",
+                                            "description": "Shanxi stir-fried jelly noodles",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "22.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "锅包肉 Crispy sweet and sour pork slices",
+                                            "description": "Crispy sweet and sour pork slices",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "23.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "东北大拉皮 Northeast style wide noodles with chilli pepper",
+                                            "description": "Northeast style wide noodles with chilli pepper",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "24.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "米肠肉 Rice blood pork with egg and black fungus",
+                                            "description": "Rice blood pork with egg and black fungus",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "19.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "溜肥肠 Stir-fried pork intestine",
+                                            "description": "Stir-fried pork intestine",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "19.80"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "MenuSection",
+                                    "name": "Beef",
+                                    "hasMenuItem": [
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "黑椒牛肉 Stir-fried beef with cumin and black pepper",
+                                            "description": "Stir-fried beef with cumin and black pepper",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "21.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "葱爆牛肉 Stir-fried beef with shallot",
+                                            "description": "Stir-fried beef with shallot",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "21.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "干煸牛肉丝 Fried shredded beef with chilli",
+                                            "description": "Fried shredded beef with chilli",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "23.80"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "MenuSection",
+                                    "name": "Chicken",
+                                    "hasMenuItem": [
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "辣子鸡 Fried peppery chicken",
+                                            "description": "Fried peppery chicken",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "22.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "大盘鸡 Sauteed spicy chicken with potato and noodles",
+                                            "description": "Sauteed spicy chicken with potato and noodles",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "35.00"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "MenuSection",
+                                    "name": "Vegetables",
+                                    "hasMenuItem": [
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "香菇油菜 Stir-fried baby bok choy with Chinese mushroom",
+                                            "description": "Stir-fried baby bok choy with Chinese mushroom",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "16.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "土豆烧茄子 Potato and eggplant with brown sauce",
+                                            "description": "Potato and eggplant with brown sauce",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "18.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "鱼香茄子 Eggplant with garlic sauce",
+                                            "description": "Eggplant with garlic sauce",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "18.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "尖椒土豆丝 Shredded potato in chilli and vinegar sauce",
+                                            "description": "Shredded potato in chilli and vinegar sauce",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "16.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "酸辣白菜 Stir-fried cabbage in sour and spicy sauce",
+                                            "description": "Stir-fried cabbage in sour and spicy sauce",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "16.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "干煸四季豆 Dry-fried French beans",
+                                            "description": "Dry-fried French beans",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "18.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "地三鲜 Stir-fried potato, capsicum and eggplant",
+                                            "description": "Stir-fried potato, capsicum and eggplant",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "18.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "麻婆豆腐 Mapo tofu",
+                                            "description": "Mapo tofu",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "18.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "干锅菜花 Dry pot cauliflower",
+                                            "description": "Dry pot cauliflower",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "18.80"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "MenuSection",
+                                    "name": "Seafood",
+                                    "hasMenuItem": [
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "辣炒花蛤 Spicy fried clam",
+                                            "description": "Spicy fried clam",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "22.80"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "MenuSection",
+                                    "name": "Rice",
+                                    "hasMenuItem": [
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "扬州炒饭 Special fried rice",
+                                            "description": "Special fried rice",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "14.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "米饭 Steamed jasmine rice",
+                                            "description": "Steamed jasmine rice",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "2.50"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "MenuSection",
+                                    "name": "Hot Pot Add-ons",
+                                    "hasMenuItem": [
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "白菜 Chinese cabbage",
+                                            "description": "Chinese cabbage",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "5.30"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "香菜 Coriander",
+                                            "description": "Coriander",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "5.30"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "金针菇 Enoki mushroom",
+                                            "description": "Enoki mushroom",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "5.30"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "腐竹 Bean curd stick",
+                                            "description": "Bean curd stick",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "8.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "冻豆腐 Frozen tofu",
+                                            "description": "Frozen tofu",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "8.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "粉条 Potato noodles",
+                                            "description": "Potato noodles",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "5.80"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "MenuSection",
+                                    "name": "BBQ Skewers",
+                                    "hasMenuItem": [
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "羊肉串 Lamb skewer",
+                                            "description": "Lamb skewer",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "2.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "牛肉串 Beef skewer",
+                                            "description": "Beef skewer",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "3.00"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "鸡肉串 Chicken skewer",
+                                            "description": "Chicken skewer",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "2.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "烤鱼豆腐 Fish tofu skewer",
+                                            "description": "Fish tofu skewer",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "2.80"
+                                            }
+                                        },
+                                        {
+                                            "@type": "MenuItem",
+                                            "name": "烤面筋 Gluten skewer",
+                                            "description": "Gluten skewer",
+                                            "offers": {
+                                                "@type": "Offer",
+                                                "priceCurrency": "AUD",
+                                                "price": "2.50"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        </script>
+    </head>
+
+    <body>
+        <header class="topbar">
+            <nav class="nav">
+                <a class="brand" href="#">
+                    <img
+                        src="assets/banner.png"
+                        alt="Shanxi Lee's Kitchen - 山西李家厨房 · Box Hill"
+                        width="1773"
+                        height="472"
+                    />
+                </a>
+                <div class="navlinks">
+                    <a href="#signature">Signature</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#visit">Visit</a>
+                    <a class="nav-cta" href="tel:0390772166">(03) 9077 2166</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <div class="eyebrow">
+                        Shanxi · Chinese · Hot Pot
+                    </div>
+                    <h1>A taste<br />from home</h1>
+                    <p>
+                        Home-style Northern Chinese dishes, lamb spine hot pot,
+                        rich broths, dumplings, noodles and skewers.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-light" href="#menu">View Menu</a>
+                        <a
+                            class="btn btn-light"
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.google.com/maps/search/?api=1&query=568+Station+St+Box+Hill+VIC+3128"
+                            >Get Directions</a
+                        >
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <a class="floating-card" href="#signature">
+                        <span>Learn More</span>
+                        <svg
+                            class="floating-card-chevron"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path d="M9 6l6 6-6 6" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <section class="story">
+                <div class="container story-grid">
+                    <figure class="story-banner">
+                        <img
+                            src="assets/lamb-spine-hotpot-story-shanxi-lees-kitchen.jpg"
+                            alt="羊蝎子 hot pot story poster at Shanxi Lee's Kitchen Box Hill"
+                        />
+                    </figure>
+
+                    <div class="story-copy">
+                        <h2>羊蝎子火锅 · Lamb Spine Hot Pot</h2>
+                        <p>
+                            Shanxi-style lamb spine hot pot with tender lamb
+                            bones, savoury broth and a centre soup pot. A house
+                            dish for sharing.
+                        </p>
+                        <p class="cn">
+                            山西风味羊蝎子火锅，羊骨香浓，适合多人分享，可搭配面食、水饺和烧烤。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="signature">
+                <div class="container">
+                    <div class="section-head">
+                        <h2>热门菜 Signature Dishes</h2>
+                    </div>
+
+                    <div class="signature-grid">
+                        <article class="dish-card">
+                            <img
+                                src="assets/lamb-spine-hotpot-shanxi-lees-kitchen-box-hill.jpg"
+                                alt="羊蝎子火锅 lamb spine hot pot at Shanxi Lee's Kitchen Box Hill"
+                            />
+                            <div class="dish-text">
+                                <h3>羊蝎子火锅</h3>
+                                <p>Lamb Spine Hot Pot</p>
+                            </div>
+                        </article>
+                        <article class="dish-card">
+                            <img
+                                src="assets/lamb-skewers-shanxi-lees-kitchen-box-hill.jpg"
+                                alt="羊肉串 lamb skewers at Shanxi Lee's Kitchen Box Hill"
+                            />
+                            <div class="dish-text">
+                                <h3>羊肉串</h3>
+                                <p>Lamb Skewers</p>
+                            </div>
+                        </article>
+                        <article class="dish-card">
+                            <img
+                                src="assets/sheep-hashlet-soup-shanxi-lees-kitchen-box-hill.jpg"
+                                alt="羊杂汤 sheep hashlet soup with noodles at Shanxi Lee's Kitchen"
+                            />
+                            <div class="dish-text">
+                                <h3>羊杂汤</h3>
+                                <p>Sheep Hashlet Soup</p>
+                            </div>
+                        </article>
+                        <article class="dish-card">
+                            <img
+                                src="assets/shanxi-dumplings-box-hill.jpg"
+                                alt="羊肉水饺 lamb dumplings at Shanxi Lee's Kitchen Box Hill"
+                            />
+                            <div class="dish-text">
+                                <h3>羊肉水饺</h3>
+                                <p>Lamb Dumplings</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="signature-more">
+                        <article class="dish-card">
+                            <img
+                                src="assets/lamb-spine-hotpot-overhead-shanxi-lees-kitchen.jpg"
+                                alt="羊蝎子火锅 overhead lamb spine hot pot at Shanxi Lee's Kitchen"
+                            />
+                            <div class="dish-text">
+                                <h3>羊蝎子火锅</h3>
+                                <p>Lamb Spine Hot Pot</p>
+                            </div>
+                        </article>
+                        <article class="dish-card">
+                            <img
+                                src="assets/saute-spicy-chicken-potato-shanxi-lees-kitchen.jpg"
+                                alt="大盘鸡 sauteed spicy chicken with potato at Shanxi Lee's Kitchen"
+                            />
+                            <div class="dish-text">
+                                <h3>大盘鸡</h3>
+                                <p>Sauteed Spicy Chicken</p>
+                            </div>
+                        </article>
+                        <article class="dish-card">
+                            <img
+                                src="assets/dry-fried-french-beans-shanxi-lees-kitchen.jpg"
+                                alt="干煸四季豆 dry fried French beans at Shanxi Lee's Kitchen"
+                            />
+                            <div class="dish-text">
+                                <h3>干煸四季豆</h3>
+                                <p>Dry-Fried French Beans</p>
+                            </div>
+                        </article>
+                        <article class="dish-card">
+                            <img
+                                src="assets/chive-pancake-shanxi-lees-kitchen.jpg"
+                                alt="韭菜盒子 chive pancake at Shanxi Lee's Kitchen Box Hill"
+                            />
+                            <div class="dish-text">
+                                <h3>韭菜盒子</h3>
+                                <p>Chive Pancake</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="menu" class="menu-section">
+                <div class="container">
+                    <div class="section-head">
+                        <h2>菜单 Menu</h2>
+                    </div>
+
+                    <div class="menu-text-grid">
+                        <article class="menu-category">
+                            <h3>House Specials</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>地炉烤包</strong
+                                    ><span>House lamb hotpot set</span>
+                                </div>
+                                <em>$58.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>羊蝎子火锅</strong
+                                    ><span>Lamb spine hot pot</span>
+                                </div>
+                                <em>$58.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>金汤鲜鱼</strong
+                                    ><span>Golden soup fish</span>
+                                </div>
+                                <em>$35.00</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>羊汤</strong><span>Lamb soup</span>
+                                </div>
+                                <em>$7.80 / $14.80</em>
+                            </div>
+                        </article>
+                        <article class="menu-category">
+                            <h3>Cold Dishes</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>特色酱牛肉</strong
+                                    ><span>Sliced beef shank</span>
+                                </div>
+                                <em>$16.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>夫妻肺片</strong
+                                    ><span
+                                        >Sliced beef and ox tripe in chilli
+                                        sauce</span
+                                    >
+                                </div>
+                                <em>$16.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>凉拌肚丝</strong
+                                    ><span>Cold shredded tripe</span>
+                                </div>
+                                <em>$11.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>拍黄瓜</strong
+                                    ><span>Cucumber salad</span>
+                                </div>
+                                <em>$11.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>凉拌木耳</strong
+                                    ><span>Black fungus salad</span>
+                                </div>
+                                <em>$11.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>凉拌土豆丝</strong
+                                    ><span>Shredded potato salad</span>
+                                </div>
+                                <em>$11.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>泡椒凤爪</strong
+                                    ><span>Pickled chilli chicken feet</span>
+                                </div>
+                                <em>$14.80</em>
+                            </div>
+                        </article>
+                        <article class="menu-category">
+                            <h3>Dumplings & Noodles</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>羊肉水饺</strong
+                                    ><span>Lamb dumplings</span>
+                                </div>
+                                <em>$13.80 / $12.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>牛肉水饺</strong
+                                    ><span>Beef dumplings</span>
+                                </div>
+                                <em>$13.80 / $12.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>猪肉水饺</strong
+                                    ><span>Pork dumplings</span>
+                                </div>
+                                <em>$13.80 / $12.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>韭菜盒子</strong
+                                    ><span>Chive pancake</span>
+                                </div>
+                                <em>Ask</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>山西炒面</strong
+                                    ><span>Shanxi fried noodles</span>
+                                </div>
+                                <em>$14.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>肉夹馍</strong
+                                    ><span>Chinese hamburger</span>
+                                </div>
+                                <em>$7.50</em>
+                            </div>
+                        </article>
+                        <article class="menu-category">
+                            <h3>Pork</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>大饼夹肉</strong
+                                    ><span
+                                        >Sliced pork head meat with pan-fried
+                                        bread</span
+                                    >
+                                </div>
+                                <em>$16.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>山西炒凉粉</strong
+                                    ><span
+                                        >Shanxi stir-fried jelly noodles</span
+                                    >
+                                </div>
+                                <em>$22.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>锅包肉</strong
+                                    ><span
+                                        >Crispy sweet and sour pork slices</span
+                                    >
+                                </div>
+                                <em>$23.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>东北大拉皮</strong
+                                    ><span
+                                        >Northeast style wide noodles with
+                                        chilli pepper</span
+                                    >
+                                </div>
+                                <em>$24.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>米肠肉</strong
+                                    ><span
+                                        >Rice blood pork with egg and black
+                                        fungus</span
+                                    >
+                                </div>
+                                <em>$19.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>溜肥肠</strong
+                                    ><span>Stir-fried pork intestine</span>
+                                </div>
+                                <em>$19.80</em>
+                            </div>
+                        </article>
+                        <article class="menu-category">
+                            <h3>Beef</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>黑椒牛肉</strong
+                                    ><span
+                                        >Stir-fried beef with cumin and black
+                                        pepper</span
+                                    >
+                                </div>
+                                <em>$21.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>葱爆牛肉</strong
+                                    ><span>Stir-fried beef with shallot</span>
+                                </div>
+                                <em>$21.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>干煸牛肉丝</strong
+                                    ><span
+                                        >Fried shredded beef with chilli</span
+                                    >
+                                </div>
+                                <em>$23.80</em>
+                            </div>
+                        </article>
+                        <article class="menu-category">
+                            <h3>Chicken</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>辣子鸡</strong
+                                    ><span>Fried peppery chicken</span>
+                                </div>
+                                <em>$22.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>大盘鸡</strong
+                                    ><span
+                                        >Sauteed spicy chicken with potato and
+                                        noodles</span
+                                    >
+                                </div>
+                                <em>$35.00 / $25.00</em>
+                            </div>
+                        </article>
+                        <article class="menu-category">
+                            <h3>Vegetables</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>香菇油菜</strong
+                                    ><span
+                                        >Stir-fried baby bok choy with Chinese
+                                        mushroom</span
+                                    >
+                                </div>
+                                <em>$16.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>土豆烧茄子</strong
+                                    ><span
+                                        >Potato and eggplant with brown
+                                        sauce</span
+                                    >
+                                </div>
+                                <em>$18.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>鱼香茄子</strong
+                                    ><span>Eggplant with garlic sauce</span>
+                                </div>
+                                <em>$18.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>尖椒土豆丝</strong
+                                    ><span
+                                        >Shredded potato in chilli and vinegar
+                                        sauce</span
+                                    >
+                                </div>
+                                <em>$16.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>酸辣白菜</strong
+                                    ><span
+                                        >Stir-fried cabbage in sour and spicy
+                                        sauce</span
+                                    >
+                                </div>
+                                <em>$16.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>干煸四季豆</strong
+                                    ><span>Dry-fried French beans</span>
+                                </div>
+                                <em>$18.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>地三鲜</strong
+                                    ><span
+                                        >Stir-fried potato, capsicum and
+                                        eggplant</span
+                                    >
+                                </div>
+                                <em>$18.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>麻婆豆腐</strong
+                                    ><span>Mapo tofu</span>
+                                </div>
+                                <em>$18.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>干锅菜花</strong
+                                    ><span>Dry pot cauliflower</span>
+                                </div>
+                                <em>$18.80</em>
+                            </div>
+                        </article>
+                        <article class="menu-category">
+                            <h3>Seafood</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>辣炒花蛤</strong
+                                    ><span>Spicy fried clam</span>
+                                </div>
+                                <em>$22.80</em>
+                            </div>
+                        </article>
+                        <article class="menu-category">
+                            <h3>Rice</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>扬州炒饭</strong
+                                    ><span>Special fried rice</span>
+                                </div>
+                                <em>$14.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>米饭</strong
+                                    ><span>Steamed jasmine rice</span>
+                                </div>
+                                <em>$2.50</em>
+                            </div>
+                        </article>
+                        <article class="menu-category">
+                            <h3>Hot Pot Add-ons</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>白菜</strong
+                                    ><span>Chinese cabbage</span>
+                                </div>
+                                <em>$5.30</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>香菜</strong><span>Coriander</span>
+                                </div>
+                                <em>$5.30</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>金针菇</strong
+                                    ><span>Enoki mushroom</span>
+                                </div>
+                                <em>$5.30</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>腐竹</strong
+                                    ><span>Bean curd stick</span>
+                                </div>
+                                <em>$8.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>冻豆腐</strong
+                                    ><span>Frozen tofu</span>
+                                </div>
+                                <em>$8.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>粉条</strong
+                                    ><span>Potato noodles</span>
+                                </div>
+                                <em>$5.80</em>
+                            </div>
+                        </article>
+                        <article class="menu-category">
+                            <h3>BBQ Skewers</h3>
+
+                            <div class="menu-item">
+                                <div>
+                                    <strong>羊肉串</strong
+                                    ><span>Lamb skewer</span>
+                                </div>
+                                <em>$2.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>牛肉串</strong
+                                    ><span>Beef skewer</span>
+                                </div>
+                                <em>$3.00</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>鸡肉串</strong
+                                    ><span>Chicken skewer</span>
+                                </div>
+                                <em>$2.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>烤鱼豆腐</strong
+                                    ><span>Fish tofu skewer</span>
+                                </div>
+                                <em>$2.80</em>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <strong>烤面筋</strong
+                                    ><span>Gluten skewer</span>
+                                </div>
+                                <em>$2.50</em>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="visit" class="visit">
+                <div class="container visit-grid">
+                    <div class="visit-card">
+                        <div class="eyebrow">Visit us</div>
+                        <h3>Shanxi Lee's Kitchen<br />山西李家厨房</h3>
+                        <div class="info-row">
+                            <strong>Address</strong
+                            ><span>568 Station St, Box Hill VIC 3128</span>
+                        </div>
+                        <div class="info-row">
+                            <strong>Phone</strong
+                            ><span
+                                ><a href="tel:0390772166"
+                                    >(03) 9077 2166</a
+                                ></span
+                            >
+                        </div>
+                        <div class="info-row">
+                            <strong>Hours</strong
+                            ><span
+                                >Please check Google before visiting for the
+                                latest opening hours.</span
+                            >
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps?q=568%20Station%20St%2C%20Box%20Hill%20VIC%203128&output=embed"
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="sticky-mobile">
+            <a href="tel:0390772166">Call</a>
+            <a href="#menu">菜单 Menu</a>
+            <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.google.com/maps/search/?api=1&query=568+Station+St+Box+Hill+VIC+3128"
+                >Directions</a
+            >
+        </div>
+
+        <footer>
+            <strong>Shanxi Lee's Kitchen · 山西李家厨房</strong>
+            <p>568 Station St, Box Hill VIC 3128 · (03) 9077 2166</p>
+        </footer>
+    </body>
+</html>

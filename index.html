@@ -131,16 +131,30 @@
                 font-size: 14px;
                 font-weight: 700;
             }
-            .nav-cta {
+            .navlinks a,
+            .navlinks a:link,
+            .navlinks a:visited,
+            .navlinks a:hover,
+            .navlinks a:focus,
+            .navlinks a:active {
+                color: #4b3c31;
+                text-decoration: none;
+                outline: none;
+            }
+            .navlinks a.nav-cta,
+            .navlinks a.nav-cta:link,
+            .navlinks a.nav-cta:visited,
+            .navlinks a.nav-cta:hover,
+            .navlinks a.nav-cta:focus,
+            .navlinks a.nav-cta:active {
                 color: #cd333a;
                 font-size: 24px;
                 font-weight: 800;
                 letter-spacing: 0.02em;
                 font-variant-numeric: tabular-nums;
                 white-space: nowrap;
-            }
-            .nav-cta:hover {
-                color: var(--ink);
+                text-decoration: none;
+                outline: none;
             }
 
             .hero {
@@ -519,6 +533,10 @@
             }
             .info-row span {
                 color: var(--muted);
+            }
+            .info-row a[href^="tel:"] {
+                color: #cd333a;
+                font-weight: 800;
             }
             .map {
                 overflow: hidden;
@@ -1307,9 +1325,10 @@
                     />
                 </a>
                 <div class="navlinks">
-                    <a href="#signature">Signature</a>
-                    <a href="#menu">Menu</a>
-                    <a href="#visit">Visit</a>
+                    <a href="#signature">热门菜·Signature</a>
+                    <a href="#menu">菜单·Menu</a>
+                    <a href="blog/index.html">美食·Blog</a>
+                    <a href="about-us/index.html">关于·About Us</a>
                     <a class="nav-cta" href="tel:0390772166">(03) 9077 2166</a>
                 </div>
             </nav>
